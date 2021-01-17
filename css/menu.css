@@ -1,0 +1,50 @@
+
+header label{
+    float: right;
+    font-size: 80px
+}
+          input[id^="menu"]{
+            display: none;
+            }
+            input[id^="menu"] + label {
+              display: block;
+              width: 80%;
+              margin: auto;
+              padding: 5px 15px;
+              background: rgb(0,0,0);
+              color: #FFF;
+              text-align: center;
+              font-size: 1.3vw;
+              border-radius: 8px;
+              cursor: pointer;
+              transition: all .6s;
+            }
+            input[id^="menu"]:checked + label {
+              color: #FFF;
+              background: #363636;
+              font-size: 1.3vw;
+            }
+            input[id^="menu"] ~ .menu {
+              width: 84%;
+              height: 0;
+              font-size: 0.8vw;
+              overflow: hidden;
+              opacity: 0;
+              margin: 6% auto; 
+              padding: 6%; 
+              background: #071C5F;
+              color: #FFF;
+              border-radius: 8%;
+              transition: all .6s;
+            }
+            input[id^="menu"]:checked + label + .menu {
+              height: auto;
+              opacity: 1;
+              padding: 2%;
+            }
+            .menu{
+                text-align:center;
+                font-style:normal;
+                padding-bottom: 2%;
+            }
+
